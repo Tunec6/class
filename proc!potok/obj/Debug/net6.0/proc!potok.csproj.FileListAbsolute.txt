@@ -1,0 +1,15 @@
+D:\Демка\prog\proc!potok\bin\Debug\net6.0\proc!potok.exe
+D:\Демка\prog\proc!potok\bin\Debug\net6.0\proc!potok.deps.json
+D:\Демка\prog\proc!potok\bin\Debug\net6.0\proc!potok.runtimeconfig.json
+D:\Демка\prog\proc!potok\bin\Debug\net6.0\proc!potok.dll
+D:\Демка\prog\proc!potok\bin\Debug\net6.0\proc!potok.pdb
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.csproj.AssemblyReference.cache
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.GeneratedMSBuildEditorConfig.editorconfig
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.AssemblyInfoInputs.cache
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.AssemblyInfo.cs
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.csproj.CoreCompileInputs.cache
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.dll
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\refint\proc!potok.dll
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.pdb
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\proc!potok.genruntimeconfig.cache
+D:\Демка\prog\proc!potok\obj\Debug\net6.0\ref\proc!potok.dll
