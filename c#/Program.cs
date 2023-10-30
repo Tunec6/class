@@ -1,25 +1,54 @@
-﻿public class Monitor{
-    string monitors;
-    string resolution;
+﻿using System.Net;
 
-    public Monitor(string monitors, string resolution){
-        this.monitors = monitors;
-        this.resolution = resolution; 
+class garden{
+
+    static int [,] pole;
+    static void Main(){
+
+        pole = new int [10,10];
+
+        Thread A = new Thread(gardenerA);
+        Thread B = new Thread(gardenerB);
+
+        A.Start();
+        B.Start();
+        A.Join();
+        B.Join();
+
+          for (int i = 0; i < 10; i++)
+            {
+                for (int a = 0; a < 10; a++)
+                {
+                    Console.Write(pole[i, a] + " ");
+                }
+                Console.WriteLine();
+            }
+
+
     }
 
-    public void Monitors(){
-        System.Console.WriteLine("Название монитора:" + monitors);
-        System.Console.WriteLine("Разрешение монитора:" + resolution);
+    static void gardenerA(){
+        for(int i = 0; i < 10; i++ ){
+            for(int a = 0; a < 10; a ++){
+                if(pole[i,a] == 0){
+                    pole[i,a] = 1;
+                }
+                Thread.Sleep(1);
+            }
+        }
     }
 
-}
+    static void gardenerB(){
+        for(int i = 10 - 1; i > 0; i--){
+            for(int b = 10 - 1; b > 0; b--){
+                if(pole[i,b] == 0){
+                    pole[i,b]= 2;
+                }
+                Thread.Sleep(1);
+            }
+        }
+    }
 
-public class Prog{
-    public static void Main(string[] args){
-        Monitor monitor1 = new Monitor("Asus rog", "1920x1080");
-        Monitor monitor2 = new Monitor("Samsung", "2460x1920");
 
-        monitor1.Monitors();
-        monitor2.Monitors();
-    } 
+
 }
