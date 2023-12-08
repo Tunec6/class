@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <h1>
+                Файлообменник
+            </h1>
+
+            <form id="upload" enctype="multipart/form-data">
+                <input type="file" id="files">
+                <input type="submit" value="Загрузить">
+            </form>
+
+            <table id="table">
+                <tr>
+                    <th>Имя файла</th>
+                    <th>Размер</th>
+                    <th>Тип</th>
+                </tr>
+            </table>
+
+            <script>
+                const input = document.getElementById('files')
+                let fileTable = [];
+
+                input.addEventListener('change'), function(event){
+                    event.preventDefault()   
+
+                    let fileName = event.target.files[0];
+                    fileTable.push({ name: fileName.name, size: fileSize.size})
+                    displayFile();
+                }
+
+                function displayFile(){
+                    const table = document.getElementById("table")
+                    table.innerHTML = " <tr><th>Имя файла</th> <th>Размер</th><th>Тип</th></tr>}"
+                    fileData.forEach(function(file) {
+                        const row = table.insertRow();
+                        const cell1 = row.insertCell();
+                        cell1.innerHTML = file.name;
+                        const cell2 = row.insertCell();
+                        cell2.innerHTML = file.size;
+                    });
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
